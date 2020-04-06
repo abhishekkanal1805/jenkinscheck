@@ -1,0 +1,33 @@
+{
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "object-literal-sort-keys": false,
+    "trailing-comma": false,
+    "interface-name": [true, "never-prefix"],
+    "max-classes-per-file": [true, 15],
+    "member-access": false,
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+    "triple-equals": false,
+    "import-name": false,
+    "no-else-after-return": false,
+    "forin": false,
+    "radix": false,
+    "no-string-literal": false,
+    "file-header": [
+      true,
+      {
+        "match": "Copyright © 2019 Deloitte. All rights reserved.",
+        "allow-single-line-comments": true,
+        "default": "Copyright © 2019 Deloitte. All rights reserved."
+      }
+    ],
+    "max-line-length": [
+      true,
+      {
+        "limit": 180,
+        "ignore-pattern": "const emailPattern"
+      }
+    ],
+    "one-variable-per-declaration": false
+  }
+}
